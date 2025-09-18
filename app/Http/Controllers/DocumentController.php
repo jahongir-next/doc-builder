@@ -18,8 +18,9 @@ class DocumentController extends Controller
         if (Storage::exists($filePath)) {
             Storage::delete($filePath);
         }
-        $image = asset('images/one.jpg');
+        $image = asset('images/one.jpg');//
 
+        //
         $content = strtr($template , self::safeTextArray( [
             '{{filePath}}' => $filePath,
             '{{name}}' => "Орган ном ива манзили",
