@@ -9,3 +9,4 @@ Route::get('/', function () {
 
 Route::get('/generate', [DocumentController::class, 'generate'])->name('document.generate');
 
+//Route::post('/generate', [DocumentController::class, 'generate'])->name('document.generate');
